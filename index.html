@@ -27,16 +27,21 @@
             id: "openseadragon1",
             prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
             tileSources: "he/output.dzi",
-            showNavigator: true, // Küçük harita ekler
-            showRotationControl: true // Döndürme kontrolü ekler
+            showNavigator: true, 
+            showRotationControl: true 
         });
 
-        var viewer2 = OpenSeadragon({
-            id: "openseadragon2",
-            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
-            tileSources: "pr/output.dzi",
-            showNavigator: true, // Küçük harita ekler
-            showRotationControl: true // Döndürme kontrolü ekler
+        viewer1.addHandler('open', function() {
+            var viewer2 = OpenSeadragon({
+                id: "openseadragon2",
+                prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
+                tileSources: "pr/output.dzi",
+                showNavigator: true, 
+                showRotationControl: true 
+            });
+
+            synchronizeViewers(viewer1, viewer2);
+            synchronizeViewers(viewer2, viewer1);
         });
 
         function synchronizeViewers(master, slave) {
@@ -50,10 +55,6 @@
                 slave.viewport.setRotation(master.viewport.getRotation());
             });
         }
-
-        synchronizeViewers(viewer1, viewer2);
-        synchronizeViewers(viewer2, viewer1);
     </script>
 </body>
 </html>
- 

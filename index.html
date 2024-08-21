@@ -6,13 +6,22 @@
     <title>Senkronize Sanal Mikroskop</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/openseadragon.min.js"></script>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
         #container {
             display: flex;
-            justify-content: space-between;
+            width: 100vw;
+            height: 100vh;
         }
         #openseadragon1, #openseadragon2 {
-            width: 48%;
-            height: 80vh;
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -47,9 +56,6 @@
                 synchronizeViewers(viewer2, viewer1);
                 synchronizeViewers(viewer1, viewer2);
             });
-
-            // HE görüntüsünü hafifçe kaydırarak PR ile senkronize et
-            viewer1.viewport.panBy(new OpenSeadragon.Point(2.01, 3.01)); // X ve Y ekseninde kaydırma. X Pozitif değer sağa, negatif değer sola kaydırır. Y Pozitif değer aşağı, negatif değer yukarı kaydırır
         });
 
         function synchronizeViewers(master, slave) {

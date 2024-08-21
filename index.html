@@ -23,21 +23,22 @@
     </div>
 
     <script type="text/javascript">
-        // İlk viewer'ı oluştur (H&E)
         var viewer1 = OpenSeadragon({
             id: "openseadragon1",
             prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
-            tileSources: "https://metinciris.github.io/slaytlar/slayt8/he/output.dzi"
+            tileSources: "https://metinciris.github.io/slaytlar/slayt8/he/output.dzi",
+            showNavigator: true, // Küçük harita ekler
+            showRotationControl: true // Döndürme kontrolü ekler
         });
 
-        // İkinci viewer'ı oluştur (PgR)
         var viewer2 = OpenSeadragon({
             id: "openseadragon2",
             prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
-            tileSources: "https://metinciris.github.io/slaytlar/slayt8/pr/output.dzi"
+            tileSources: "https://metinciris.github.io/slaytlar/slayt8/pr/output.dzi",
+            showNavigator: true, // Küçük harita ekler
+            showRotationControl: true // Döndürme kontrolü ekler
         });
 
-        // Senkronize fonksiyonu
         function synchronizeViewers(master, slave) {
             master.addHandler('zoom', function() {
                 slave.viewport.zoomTo(master.viewport.getZoom());
@@ -50,7 +51,6 @@
             });
         }
 
-        // Viewer'ları karşılıklı olarak senkronize et
         synchronizeViewers(viewer1, viewer2);
         synchronizeViewers(viewer2, viewer1);
     </script>

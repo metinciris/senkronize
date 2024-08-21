@@ -44,7 +44,7 @@
 
             viewer1.addHandler('open', function() {
                 // HE görüntüsünü kesin bir konuma taşıyarak PR ile senkronize et
-                viewer1.viewport.panTo(new OpenSeadragon.Point(0.52, 0.48)); // X ve Y ekseninde kesin konum ayarı
+                viewer1.viewport.panTo(new OpenSeadragon.Point(10.52, 5.48)); // X ve Y ekseninde kesin konum ayarı
                 synchronizeViewers(viewer2, viewer1);
                 synchronizeViewers(viewer1, viewer2);
             });

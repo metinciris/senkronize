@@ -40,7 +40,7 @@ Bu proje, [OpenSeadragon](https://openseadragon.github.io/) JavaScript kütüpha
 Görüntüler arasındaki pozisyon farkını düzeltmek için `panBy` fonksiyonu kullanılarak HE görüntüsü PR'ye göre hafifçe kaydırılmıştır.
 
 ```javascript
-viewer1.viewport.panBy(new OpenSeadragon.Point(0.01, 0.01));
+viewer1.viewport.panBy(new OpenSeadragon.Point(2.01, 3.01));
 ```
 
 Bu ayarlar, X ve Y ekseninde kaydırma yaparak görüntülerin senkronize olmasını sağlar.
@@ -52,6 +52,4 @@ Katkıda bulunmak isterseniz, lütfen bir `pull request` gönderin veya bir `iss
 ## Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
-```
 
-Bu `README.md` dosyası, projenizin ana özelliklerini, dosya yapısını, kullanımını ve OpenSeadragon'u nasıl entegre ettiğinizi açıklar. Ayrıca, demo bağlantısını ekledim, böylece ziyaretçiler kolayca projeyi deneyebilirler. README dosyasını ihtiyacınıza göre özelleştirebilirsiniz!

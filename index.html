@@ -40,8 +40,11 @@
                 showRotationControl: true 
             });
 
-            synchronizeViewers(viewer1, viewer2);
-            synchronizeViewers(viewer2, viewer1);
+            viewer2.addHandler('open', function() {
+                // Senkronizasyonu yalnızca her iki görüntü yüklendikten sonra başlat
+                synchronizeViewers(viewer1, viewer2);
+                synchronizeViewers(viewer2, viewer1);
+            });
         });
 
         function synchronizeViewers(master, slave) {

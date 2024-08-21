@@ -1,5 +1,4 @@
 
-```markdown
 # Senkronize Sanal Mikroskop
 
 Bu proje, iki farklı mikroskopik görüntünün (HE ve PR boyaları) aynı anda senkronize bir şekilde görüntülenmesini sağlar. Kullanıcılar, her iki görüntüde de eş zamanlı olarak dolaşabilir, yakınlaştırabilir ve görüntüyü döndürebilir. HE ve PR görüntüleri arasındaki pozisyon farkını düzeltmek için ince senkronizasyon ayarları yapılmıştır.

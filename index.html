@@ -3,25 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PgR Test</title>
+    <title>Senkronize Sanal Mikroskop</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/openseadragon.min.js"></script>
     <style>
-        #openseadragon {
-            width: 100%;
+        #container {
+            display: flex;
+            justify-content: space-between;
+        }
+        #openseadragon1, #openseadragon2 {
+            width: 48%;
             height: 80vh;
         }
     </style>
 </head>
 <body>
-    <div id="openseadragon"></div>
+    <div id="container">
+        <div id="openseadragon1"></div>
+        <div id="openseadragon2"></div>
+    </div>
 
     <script type="text/javascript">
-        var viewer = OpenSeadragon({
-            id: "openseadragon",
+        // İlk viewer'ı oluştur (H&E)
+        var viewer1 = OpenSeadragon({
+            id: "openseadragon1",
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
+            tileSources: "https://metinciris.github.io/slaytlar/slayt8/he/output.dzi"
+        });
+
+        // İkinci viewer'ı oluştur (PgR)
+        var viewer2 = OpenSeadragon({
+            id: "openseadragon2",
             prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
             tileSources: "https://metinciris.github.io/slaytlar/slayt8/pr/output.dzi"
         });
+
+        // Senkronize fonksiyonu
+        function synchronizeViewers(master, slave) {
+            master.addHandler('zoom', function() {
+                slave.viewport.zoomTo(master.viewport.getZoom());
+            });
+            master.addHandler('pan', function() {
+                slave.viewport.panTo(master.viewport.getCenter());
+            });
+            master.addHandler('rotate', function() {
+                slave.viewport.setRotation(master.viewport.getRotation());
+            });
+        }
+
+        // Viewer'ları karşılıklı olarak senkronize et
+        synchronizeViewers(viewer1, viewer2);
+        synchronizeViewers(viewer2, viewer1);
     </script>
 </body>
 </html>
+
 

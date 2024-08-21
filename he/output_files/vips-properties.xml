@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<image xmlns="http://www.vips.ecs.soton.ac.uk//dzsave" date="2024-08-20T21:51:57.278934+03" version="8.15.2">
+  <properties>
+    <property>
+      <name>width</name>
+      <value type="gint">40320</value>
+    </property>
+    <property>
+      <name>height</name>
+      <value type="gint">48960</value>
+    </property>
+    <property>
+      <name>bands</name>
+      <value type="gint">4</value>
+    </property>
+    <property>
+      <name>xoffset</name>
+      <value type="gint">0</value>
+    </property>
+    <property>
+      <name>yoffset</name>
+      <value type="gint">0</value>
+    </property>
+    <property>
+      <name>xres</name>
+      <value type="gdouble">1706.4846416382254</value>
+    </property>
+    <property>
+      <name>yres</name>
+      <value type="gdouble">1706.4846416382254</value>
+    </property>
+    <property>
+      <name>vips-loader</name>
+      <value type="VipsRefString">openslideload</value>
+    </property>
+    <property>
+      <name>slide-level</name>
+      <value type="gint">0</value>
+    </property>
+    <property>
+      <name>aperio.AppMag</name>
+      <value type="VipsRefString">20</value>
+    </property>
+    <property>
+      <name>aperio.Date</name>
+      <value type="VipsRefString">08 . 18 . 24</value>
+    </property>
+    <property>
+      <name>aperio.Filename</name>
+      <value type="VipsRefString">mesane endometriozis 20x</value>
+    </property>
+    <property>
+      <name>aperio.Filtered</name>
+      <value type="VipsRefString">5</value>
+    </property>
+    <property>
+      <name>aperio.Focus Offset</name>
+      <value type="VipsRefString">0.0</value>
+    </property>
+    <property>
+      <name>aperio.ICC Profile</name>
+      <value type="VipsRefString">ScanScope v1</value>
+    </property>
+    <property>
+      <name>aperio.ImageID</name>
+      <value type="VipsRefString">2001084</value>
+    </property>
+    <property>
+      <name>aperio.Left</name>
+      <value type="VipsRefString">0.0</value>
+    </property>
+    <property>
+      <name>aperio.LineAreaXOffset</name>
+      <value type="VipsRefString">0.0</value>
+    </property>
+    <property>
+      <name>aperio.LineAreaYOffset</name>
+      <value type="VipsRefString">0.0</value>
+    </property>
+    <property>
+      <name>aperio.LineCameraSkew</name>
+      <value type="VipsRefString">0.0</value>
+    </property>
+    <property>
+      <name>aperio.MPP</name>
+      <value type="VipsRefString">0.586</value>
+    </property>
+    <property>
+      <name>aperio.OriginalWidth</name>
+      <value type="VipsRefString">40320</value>
+    </property>
+    <property>
+      <name>aperio.Originalheight</name>
+      <value type="VipsRefString">48960</value>
+    </property>
+    <property>
+      <name>aperio.Parmset</name>
+      <value type="VipsRefString">USM Filter</value>
+    </property>
+    <property>
+      <name>aperio.ScanScope ID</name>
+      <value type="VipsRefString">MVMWSI</value>
+    </property>
+    <property>
+      <name>aperio.StripeWidth</name>
+      <value type="VipsRefString">2040</value>
+    </property>
+    <property>
+      <name>aperio.Time</name>
+      <value type="VipsRefString">16:18:46</value>
+    </property>
+    <property>
+      <name>aperio.Top</name>
+      <value type="VipsRefString">0.0</value>
+    </property>
+    <property>
+      <name>aperio.User</name>
+      <value type="VipsRefString">b414003d - 95c6 - 48b0 - 9369 - 8010ed517ba7</value>
+    </property>
+    <property>
+      <name>openslide.associated.thumbnail.height</name>
+      <value type="VipsRefString">1023</value>
+    </property>
+    <property>
+      <name>openslide.associated.thumbnail.width</name>
+      <value type="VipsRefString">843</value>
+    </property>
+    <property>
+      <name>openslide.comment</name>
+      <value type="VipsRefString">Aperio Image Library v10.0.51
+40320x48960[0, 0 40320x48960](192x192) JPEG / RGB Q = 90 | AppMag = 20 | StripeWidth = 2040 | ScanScope ID = MVMWSI | Filename = mesane endometriozis 20x | Date = 08 . 18 . 24 | Time = 16:18:46 | User = b414003d - 95c6 - 48b0 - 9369 - 8010ed517ba7 | Parmset = USM Filter | MPP = 0.586 | Left = 0.0 | Top = 0.0 | LineCameraSkew = 0.0 | LineAreaXOffset = 0.0 | LineAreaYOffset = 0.0 | Focus Offset = 0.0 | ImageID = 2001084 | OriginalWidth = 40320 | Originalheight = 48960 | Filtered = 5 | ICC Profile = ScanScope v1</value>
+    </property>
+    <property>
+      <name>openslide.level-count</name>
+      <value type="VipsRefString">5</value>
+    </property>
+    <property>
+      <name>openslide.level[0].downsample</name>
+      <value type="VipsRefString">1</value>
+    </property>
+    <property>
+      <name>openslide.level[0].height</name>
+      <value type="VipsRefString">48960</value>
+    </property>
+    <property>
+      <name>openslide.level[0].tile-height</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[0].tile-width</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[0].width</name>
+      <value type="VipsRefString">40320</value>
+    </property>
+    <property>
+      <name>openslide.level[1].downsample</name>
+      <value type="VipsRefString">4</value>
+    </property>
+    <property>
+      <name>openslide.level[1].height</name>
+      <value type="VipsRefString">12240</value>
+    </property>
+    <property>
+      <name>openslide.level[1].tile-height</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[1].tile-width</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[1].width</name>
+      <value type="VipsRefString">10080</value>
+    </property>
+    <property>
+      <name>openslide.level[2].downsample</name>
+      <value type="VipsRefString">16</value>
+    </property>
+    <property>
+      <name>openslide.level[2].height</name>
+      <value type="VipsRefString">3060</value>
+    </property>
+    <property>
+      <name>openslide.level[2].tile-height</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[2].tile-width</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[2].width</name>
+      <value type="VipsRefString">2520</value>
+    </property>
+    <property>
+      <name>openslide.level[3].downsample</name>
+      <value type="VipsRefString">64</value>
+    </property>
+    <property>
+      <name>openslide.level[3].height</name>
+      <value type="VipsRefString">765</value>
+    </property>
+    <property>
+      <name>openslide.level[3].tile-height</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[3].tile-width</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[3].width</name>
+      <value type="VipsRefString">630</value>
+    </property>
+    <property>
+      <name>openslide.level[4].downsample</name>
+      <value type="VipsRefString">255.09493670886076</value>
+    </property>
+    <property>
+      <name>openslide.level[4].height</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[4].tile-height</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[4].tile-width</name>
+      <value type="VipsRefString">192</value>
+    </property>
+    <property>
+      <name>openslide.level[4].width</name>
+      <value type="VipsRefString">158</value>
+    </property>
+    <property>
+      <name>openslide.mpp-x</name>
+      <value type="VipsRefString">0.58599999999999997</value>
+    </property>
+    <property>
+      <name>openslide.mpp-y</name>
+      <value type="VipsRefString">0.58599999999999997</value>
+    </property>
+    <property>
+      <name>openslide.objective-power</name>
+      <value type="VipsRefString">20</value>
+    </property>
+    <property>
+      <name>openslide.quickhash-1</name>
+      <value type="VipsRefString">e8f91cc9888b68910f8a608c184e95fa1c53314ef88268c05b8abe73f93ad5d8</value>
+    </property>
+    <property>
+      <name>openslide.vendor</name>
+      <value type="VipsRefString">aperio</value>
+    </property>
+    <property>
+      <name>tiff.ImageDescription</name>
+      <value type="VipsRefString">Aperio Image Library v10.0.51
+40320x48960[0, 0 40320x48960](192x192) JPEG / RGB Q = 90 | AppMag = 20 | StripeWidth = 2040 | ScanScope ID = MVMWSI | Filename = mesane endometriozis 20x | Date = 08 . 18 . 24 | Time = 16:18:46 | User = b414003d - 95c6 - 48b0 - 9369 - 8010ed517ba7 | Parmset = USM Filter | MPP = 0.586 | Left = 0.0 | Top = 0.0 | LineCameraSkew = 0.0 | LineAreaXOffset = 0.0 | LineAreaYOffset = 0.0 | Focus Offset = 0.0 | ImageID = 2001084 | OriginalWidth = 40320 | Originalheight = 48960 | Filtered = 5 | ICC Profile = ScanScope v1</value>
+    </property>
+    <property>
+      <name>tiff.ResolutionUnit</name>
+      <value type="VipsRefString">centimeter</value>
+    </property>
+    <property>
+      <name>tiff.XResolution</name>
+      <value type="VipsRefString">17064.845703125</value>
+    </property>
+    <property>
+      <name>tiff.YResolution</name>
+      <value type="VipsRefString">17064.845703125</value>
+    </property>
+    <property>
+      <name>slide-associated-images</name>
+      <value type="VipsRefString">thumbnail</value>
+    </property>
+    <property>
+      <name>vips-sequential</name>
+      <value type="gint">1</value>
+    </property>
+  </properties>
+</image>

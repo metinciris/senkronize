@@ -6,22 +6,17 @@
     <title>Senkronize Sanal Mikroskop</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/openseadragon.min.js"></script>
     <style>
-        /* Sayfa genelinde margin ve padding ayarlarını sıfırla */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
         }
-        
-        /* Görüntülerin yer aldığı container */
         #container {
             display: flex;
             justify-content: space-between;
             align-items: stretch;
             height: 100%;
         }
-        
-        /* Her bir görüntü için ayarlar */
         #openseadragon1, #openseadragon2 {
             width: 50%;
             height: 100%;
@@ -37,7 +32,7 @@
     </div>
 
     <script type="text/javascript">
-        // Önce PR görüntüsünü yükle
+        // PR görüntüsünü yükle
         var viewer2 = OpenSeadragon({
             id: "openseadragon2",
             prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
@@ -50,20 +45,27 @@
             // PR yüklendikten sonra HE görüntüsünü yükle
             var viewer1 = OpenSeadragon({
                 id: "openseadragon1",
-                prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
-                tileSources: "he/output.dzi",
-                showNavigator: true, 
-                showRotationControl: true 
+            prefixUrl: "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.2/images/",
+            tileSources: "he/output.dzi",
+            showNavigator: true, 
+            showRotationControl: true 
             });
 
             viewer1.addHandler('open', function() {
-                // Senkronizasyonu yalnızca her iki görüntü yüklendikten sonra başlat
+                // Senkronizekoordinatlar.py dosyasından alınan kodların uygulanması:
+// *******************************
+//    HTML Kodu:
+//   viewer1.viewport.panBy(new OpenSeadragon.Point(0.0220, 0.0060));
+//   viewer1.viewport.setRotation(0.00);
+// *******************************
+                
+                viewer1.viewport.panBy(new OpenSeadragon.Point(0.0220, 0.0060)); // X ve Y kaydırma
+                viewer1.viewport.setRotation(0.00); // Döndürme açısı
+
+                // Senkronizasyonu başlat
                 synchronizeViewers(viewer2, viewer1);
                 synchronizeViewers(viewer1, viewer2);
             });
-
-            // HE görüntüsünü hafifçe kaydırarak PR ile senkronize et
-            viewer1.viewport.panBy(new OpenSeadragon.Point(1.01, 2.01)); // X ve Y ekseninde kaydırma
         });
 
         function synchronizeViewers(master, slave) {

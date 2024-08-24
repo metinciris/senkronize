@@ -85,6 +85,11 @@ Aşağıdaki ekran görüntüsü, `senkronizekoordinatlar.py` dosyasını çalı
 
 ![senkronizasyon sonucu](https://raw.githubusercontent.com/metinciris/senkronize/main/senkronizekoordinatlar.PNG)
 
+
+## Demo 
+
+Demo bakın https://metinciris.github.io/senkronize/
+
 ## Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasına bakabilirsiniz.
